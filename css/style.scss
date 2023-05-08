@@ -1,7 +1,7 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #62d2a2;
-$primary2: #1fab89;
+$primary1: #6182C5;
+$primary2: #003F75;
 $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Nunito', sans-serif;
@@ -251,6 +251,13 @@ a:focus {
       }
     }
   }
+}
+
+.subtext {
+  color: $white;
+  font-size: 20px;
+  margin-top: 5px;
+  
 }
 
 /*end header section*/
