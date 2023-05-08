@@ -397,28 +397,28 @@ a:focus {
   text-align: center;
   position: relative;
 }
-.doctor_section .box .detail-box .social_box {
+.doctor_section .box .detail-box .plus_btn {
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: 150%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #6182C5;
   padding: 10px;
   border-radius: 5px;
   display: flex;
   opacity: 0;
   transition: all 0.3s;
 }
-.doctor_section .box .detail-box .social_box a {
-  color: #6182C5;
+.doctor_section .box .detail-box .plus_btn a {
+  color: #ffffff;
   margin: 0 10px;
 }
-.doctor_section .box .detail-box .social_box a:hover {
+.doctor_section .box .detail-box .plus_btn a:hover {
   color: #003F75;
 }
-.doctor_section .box:hover .social_box {
-  top: 0;
+.doctor_section .box:hover .plus_btn {
+  top: 60px;
   opacity: 1;
 }
 .doctor_section .btn-box {

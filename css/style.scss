@@ -257,7 +257,6 @@ a:focus {
   color: $white;
   font-size: 20px;
   margin-top: 5px;
-  
 }
 
 /*end header section*/
@@ -474,13 +473,13 @@ a:focus {
       text-align: center;
       position: relative;
 
-      .social_box {
+      .plus_btn {
         position: absolute;
         z-index: 2;
         left: 50%;
-        top: 150%;
+        top: 50%;
         transform: translate(-50%, -50%);
-        background-color: $white;
+        background-color: $primary1;
         padding: 10px;
         border-radius: 5px;
         display: flex;
@@ -488,7 +487,7 @@ a:focus {
         transition: all .3s;
 
         a {
-          color: $primary1;
+          color: $white;
           margin: 0 10px;
 
           &:hover {
@@ -499,8 +498,8 @@ a:focus {
     }
 
     &:hover {
-      .social_box {
-        top: 0;
+      .plus_btn {
+        top: 60px;
         opacity: 1;
       }
     }
