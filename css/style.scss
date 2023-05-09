@@ -160,6 +160,12 @@ a:focus {
 }
 
 .navbar-brand {
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
   span {
     font-weight: bold;
     font-size: 24px;
@@ -353,8 +359,8 @@ a:focus {
     text-align: center;
 
     .img-box {
-      width: 90px;
-      height: 90px;
+      width: 200px;
+      height: 200px;
       margin-bottom: 15px;
       background-color: $primary1;
       border-radius: 100%;
@@ -363,9 +369,9 @@ a:focus {
       align-items: center;
 
       img {
-        max-width: 55px;
-        max-height: 55px;
-        transition: all 0.3s;
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
       }
     }
 
@@ -466,36 +472,6 @@ a:focus {
       padding: 25px 15px;
       text-align: center;
       position: relative;
-
-      .plus_btn {
-        position: absolute;
-        z-index: 2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-color: $primary1;
-        padding: 10px;
-        border-radius: 5px;
-        display: flex;
-        opacity: 0;
-        transition: all .3s;
-
-        a {
-          color: $white;
-          margin: 0 10px;
-
-          &:hover {
-            color: $primary2;
-          }
-        }
-      }
-    }
-
-    &:hover {
-      .plus_btn {
-        top: 60px;
-        opacity: 1;
-      }
     }
   }
 
