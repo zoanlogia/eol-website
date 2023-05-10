@@ -120,6 +120,8 @@ a:focus {
 .navbar-brand img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .navbar-brand span {
   font-weight: bold;
@@ -141,6 +143,9 @@ a:focus {
   text-transform: uppercase;
   border-radius: 5px;
   transition: all 0.3s;
+}
+.custom_nav-container .navbar-nav .nav-item :hover {
+  font-weight: 700;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -215,6 +220,7 @@ a:focus {
 .slider_section #customCarousel1 {
   width: 100%;
   position: unset;
+  height: 500px;
 }
 .slider_section .detail-box {
   color: #003F75;
@@ -292,8 +298,8 @@ a:focus {
   text-align: center;
 }
 .department_section .box .img-box {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 15px;
   background-color: #6182C5;
   border-radius: 100%;
@@ -483,8 +489,10 @@ a:focus {
 }
 .client_section .box .img-box {
   margin-bottom: 15px;
-  min-width: 145px;
-  max-width: 145px;
+  min-width: 250px;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 1px solid #6182C5;
   overflow: hidden;
 }
 .client_section .box .img-box img {
@@ -628,6 +636,10 @@ a:focus {
 }
 .footer_section .footer-info p a {
   color: inherit;
+}
+
+video {
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
