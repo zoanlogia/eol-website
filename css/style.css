@@ -143,6 +143,7 @@ a:focus {
   text-transform: uppercase;
   border-radius: 5px;
   transition: all 0.3s;
+  white-space: nowrap;
 }
 .custom_nav-container .navbar-nav .nav-item :hover {
   font-weight: 700;
@@ -372,6 +373,11 @@ a:focus {
 .about_section .detail-box a:hover {
   background-color: transparent;
   color: #6182C5;
+}
+.about_section .detail-box .list-about {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
 }
 
 .doctor_section {
