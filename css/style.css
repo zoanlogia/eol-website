@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+b {
+  font-weight: 600;
+  color: #003F75;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   color: #000000;
@@ -430,7 +435,7 @@ a:focus {
 .contact_section .heading_container h2 {
   text-transform: uppercase;
 }
-.contact_section .form_container input {
+.contact_section .form_container input, .contact_section .form_container select {
   width: 100%;
   border: none;
   height: 50px;
@@ -440,10 +445,10 @@ a:focus {
   color: #101010;
   background: #eeeeee;
 }
-.contact_section .form_container input::placeholder {
+.contact_section .form_container input::placeholder, .contact_section .form_container select::placeholder {
   color: #000000;
 }
-.contact_section .form_container input.message-box {
+.contact_section .form_container input.message-box, .contact_section .form_container select.message-box {
   height: 175px;
 }
 .contact_section .form_container button {
@@ -538,6 +543,84 @@ a:focus {
 }
 .client_section .carousel-control-next {
   left: initial;
+}
+
+#solution_page b {
+  font-weight: 600;
+  color: #003F75;
+}
+#solution_page li::marker {
+  content: "👉    ";
+}
+#solution_page h5 {
+  font-weight: 600;
+  color: #003F75;
+}
+#solution_page .box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+#solution_page .box .img-box {
+  width: 100%;
+}
+#solution_page .box .img-box img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+#solution_page .box .detail-box {
+  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+  position: relative;
+}
+#solution_page .box .detail-box .social_box {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 150%;
+  transform: translate(-50%, -50%);
+  background-color: #6182C5;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  opacity: 0;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+#solution_page .box .detail-box .social_box a {
+  color: #ffffff;
+  margin: 0 10px;
+}
+#solution_page .box .detail-box .social_box a:hover {
+  color: #ffffff;
+}
+#solution_page .box:hover .social_box {
+  top: 0;
+  opacity: 1;
+}
+#solution_page .btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+#solution_page .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #003F75;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 1px solid #003F75;
+}
+#solution_page .btn-box a:hover {
+  background-color: transparent;
+  color: #003F75;
 }
 
 .footer_section {
@@ -651,6 +734,12 @@ video {
 #about_page .picture {
   margin-bottom: 2em;
 }
+#about_page .picture img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 #about_page h1 {
   color: #003F75;
   margin-bottom: 1em;
@@ -659,10 +748,28 @@ video {
   border: 1px solid #003F75;
   width: 20%;
 }
-#about_page img {
-  width: 100%;
-  object-fit: contain;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+#about_page .brochure {
+  display: flex;
+  align-items: center;
+  border: 1px solid #003F75;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 250px;
+}
+#about_page .brochure img {
+  margin-right: 1em;
+}
+#about_page .brochure :hover {
+  color: #ffffff;
+}
+#about_page .brochure-container {
+  padding-top: 0.5em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#about_page .brochure-container :hover {
+  background-color: #003F75;
 }
 #about_page li {
   padding-left: 1ch;
@@ -937,6 +1044,11 @@ h6,
 #ecrf_page .carousel-control-prev-icon:after {
   content: "◀︎";
   font-size: 35px;
+  color: #003F75;
+}
+
+#devis_page li::marker {
+  content: "👉    ";
   color: #003F75;
 }
 
