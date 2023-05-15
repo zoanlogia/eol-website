@@ -59,6 +59,11 @@ body {
   text-align: center;
 }
 
+h1 {
+  color: #003F75;
+  margin-bottom: 1em;
+}
+
 a,
 a:hover,
 a:focus {
@@ -638,11 +643,17 @@ video {
   border-radius: 5px;
 }
 
+.content-bolder {
+  font-weight: 600;
+  color: #003F75;
+}
+
 #about_page .picture {
-  margin: 0 6em;
+  margin-bottom: 2em;
 }
 #about_page h1 {
   color: #003F75;
+  margin-bottom: 1em;
 }
 #about_page hr {
   border: 1px solid #003F75;
@@ -652,10 +663,6 @@ video {
   width: 100%;
   object-fit: contain;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-#about_page .content-bolder {
-  font-weight: 600;
-  color: #003F75;
 }
 #about_page li {
   padding-left: 1ch;
@@ -767,18 +774,19 @@ h6,
   font-size: 10px;
 }
 
-.item > .head {
+.head {
   text-align: center;
   margin-bottoom: 5px;
 }
-.item > .head .title {
+.head .title {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 10px;
 }
-.item > .head .icon {
+.head .icon {
   margin-bottom: 10px;
 }
+
 .item .content {
   font-size: 15px;
 }
@@ -862,6 +870,74 @@ h6,
     bottom: 0;
     margin-top: 20px;
   }
+}
+#ecrf_page .wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#ecrf_page ol {
+  list-style: none;
+  padding: 0;
+}
+#ecrf_page li + li {
+  margin-top: 1rem;
+}
+#ecrf_page li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: aliceblue;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: calc(100% - 2rem);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+#ecrf_page li::before {
+  counter-increment: list-item;
+  content: counter(list-item);
+  font-size: 2rem;
+  font-weight: 700;
+  width: 1.5em;
+  height: 1.5em;
+  background: #003F75;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ecrf_page li:nth-child(even) {
+  flex-direction: row-reverse;
+  background: lavender;
+  margin-right: -2rem;
+  margin-left: 2rem;
+}
+#ecrf_page .end_paragraph {
+  margin-top: 1em;
+}
+#ecrf_page .carousel-control-prev,
+#ecrf_page .carousel-control-next {
+  top: 50%;
+}
+#ecrf_page .carousel-control-prev-icon,
+#ecrf_page .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: #003F75;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+#ecrf_page .carousel-control-next-icon:after {
+  content: "►";
+  font-size: 35px;
+  color: #003F75;
+}
+#ecrf_page .carousel-control-prev-icon:after {
+  content: "◀︎";
+  font-size: 35px;
+  color: #003F75;
 }
 
 /*# sourceMappingURL=style.css.map */
